@@ -85,8 +85,8 @@ dependencies {
     implementation ('org.springframework.boot:spring-boot-starter-web-services') {
         exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
     }
-    implementation "com.sun.xml.messaging.saaj:saaj-impl:1.5.2"
-    implementation 'org.springframework.ws:spring-ws-core'
+
+//    implementation 'org.springframework.ws:spring-ws-core'
     implementation 'wsdl4j:wsdl4j:1.6.3'
     jaxb("org.glassfish.jaxb:jaxb-xjc:2.2.11")
     compile(files(genJaxb.classesDir).builtBy(genJaxb))
@@ -102,6 +102,7 @@ mainClassName = 'spring.demo.DemoApplication'
 group = 'spring'
 version = '1.0-SNAPSHOT'
 sourceCompatibility = '1.8'
+targetCompatibility = 1.8
 
 publishing {
     publications {
@@ -133,7 +134,7 @@ bundle {
             'Bundle-ManifestVersion': 2,
             'Bundle-Activator': 'spring.demo.DemoApplication',
             'Export-Package': '*',
-            'Import-Package': 'org.osgi.framework, org.springframework.boot, org.springframework.boot.autoconfigure, javax.naming, javax.management, javax.management.modelmbean, javax.net.ssl, org.ietf.jgss, org.xml.sax, javax.xml.parsers, org.osgi.service.packageadmin, org.springframework.boot.web.servlet.support, javax.xml.transform, org.w3c.dom, javax.xml.namespace, javax.xml.xpath, javax.xml.stream, javax.xml.transform.dom, com.sun.xml.messaging.saaj',
+            'Import-Package': 'org.osgi.framework, org.springframework.boot, org.springframework.boot.autoconfigure, javax.naming, javax.management, javax.management.modelmbean, javax.net.ssl, org.ietf.jgss, org.xml.sax, javax.xml.parsers, org.osgi.service.packageadmin, org.springframework.boot.web.servlet.support, javax.xml.transform, org.w3c.dom, javax.xml.namespace, javax.xml.xpath, javax.xml.stream, javax.xml.transform.dom, com.sun.xml.messaging.saaj, javax.xml.soap, com.sun.xml.messaging.saaj.soap, javax.xml.transform.stream',
             'Start-Class': 'spring.demo.DemoApplication',
             'Embed-Dependency': '*;artifactId=org.apache.felix.framework;inline=true'
     }

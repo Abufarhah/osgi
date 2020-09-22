@@ -1,6 +1,8 @@
 package spring.demo.endPoint;
 
 import com.example.me.Bundle;
+import com.example.me.GetBundleRequest;
+import com.example.me.GetBundleResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
@@ -20,8 +22,10 @@ public class BundleEndPoint {
 
     @PayloadRoot(namespace = SOAP_NAMESPACE, localPart = WSDL_BEAN_NAME)
     @ResponsePayload
-    public Bundle getLoanStatus(@RequestPayload Bundle request) {
-        return service.checkBundle(request);
+    public GetBundleResponse getBundle(@RequestPayload GetBundleRequest request) {
+        GetBundleResponse response = new GetBundleResponse();
+        BundleService service = new BundleService();
+        response.setBundle(service.checkBundle(request.getId()));
+        return response;
     }
-
 }

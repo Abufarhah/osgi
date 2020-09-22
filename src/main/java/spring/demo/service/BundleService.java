@@ -6,11 +6,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class BundleService {
 
-    public Bundle checkBundle(Bundle request) {
+    public Bundle checkBundle(int id) {
         Bundle acknowledgement = new Bundle();
 
-        request.getId();
-        acknowledgement.setId(request.getId());
+        acknowledgement.setId(id);
         acknowledgement.setName("test");
         acknowledgement.setPrice(10);
 

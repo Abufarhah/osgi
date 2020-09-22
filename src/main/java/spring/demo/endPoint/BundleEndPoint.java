@@ -1,6 +1,5 @@
 package spring.demo.endPoint;
 
-import com.example.me.Bundle;
 import com.example.me.GetBundleRequest;
 import com.example.me.GetBundleResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +19,7 @@ public class BundleEndPoint {
     @Autowired
     private BundleService service;
 
-    @PayloadRoot(namespace = SOAP_NAMESPACE, localPart = WSDL_BEAN_NAME)
+    @PayloadRoot(namespace = SOAP_NAMESPACE, localPart = "getBundleRequest")
     @ResponsePayload
     public GetBundleResponse getBundle(@RequestPayload GetBundleRequest request) {
         GetBundleResponse response = new GetBundleResponse();
@@ -28,4 +27,5 @@ public class BundleEndPoint {
         response.setBundle(service.checkBundle(request.getId()));
         return response;
     }
+
 }

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13235f97-f6a4-4249-a4dd-3a212046e738" name="Default Changelist" comment="" />
+    <list default="true" id="13235f97-f6a4-4249-a4dd-3a212046e738" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +92,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OSGI_Bundle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -106,7 +109,7 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.osgi [clean]">
+  <component name="RunManager" selected="OSGi Bundles.Unnamed">
     <configuration name="OSGI_Rest [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -201,12 +204,9 @@
       <method v="2" />
     </configuration>
     <configuration name="osgi" type="ShConfigurationType" temporary="true">
-      <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
       <option name="SCRIPT_PATH" value="$PROJECT_DIR$/build/scripts/osgi" />
       <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="false" />
       <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/build/scripts" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="false" />
       <option name="INTERPRETER_PATH" value="/bin/zsh" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <method v="2" />
@@ -230,10 +230,10 @@
       <item itemvalue="Gradle.osgi [bundle]" />
       <item itemvalue="Gradle.osgi [export]" />
       <item itemvalue="Gradle.osgi [clean]" />
+      <item itemvalue="Gradle.OSGI_Rest [jar]" />
       <item itemvalue="OSGi Bundles.Unnamed" />
       <item itemvalue="Shell Script.osgi" />
       <item itemvalue="Spring Boot.DemoApplication" />
-      <item itemvalue="Gradle.OSGI_Rest [jar]" />
     </list>
     <recent_temporary>
       <list>
@@ -264,11 +264,12 @@
       <workItem from="1598266323699" duration="1984000" />
       <workItem from="1598270038908" duration="6547000" />
       <workItem from="1600601104525" duration="7264000" />
+      <workItem from="1600682101233" duration="5339000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="204" y="61" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600601430007">
@@ -300,26 +301,26 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="571" y="134" key="Github.UntrackedFilesDialog/0.0.1600.860@0.0.1600.860" timestamp="1600608708346" />
-    <state width="1557" height="237" key="GridCell.Tab.0.bottom" timestamp="1600608718935">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1398" height="237" key="GridCell.Tab.0.bottom" timestamp="1600775896242">
+      <screen x="0" y="23" width="1440" height="788" />
     </state>
     <state width="1557" height="237" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1600608718935" />
-    <state width="1398" height="237" key="GridCell.Tab.0.bottom/0.23.1440.788@0.23.1440.788" timestamp="1598277420195" />
-    <state width="1557" height="237" key="GridCell.Tab.0.center" timestamp="1600608718935">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1398" height="237" key="GridCell.Tab.0.bottom/0.23.1440.788@0.23.1440.788" timestamp="1600775896242" />
+    <state width="1398" height="237" key="GridCell.Tab.0.center" timestamp="1600775896242">
+      <screen x="0" y="23" width="1440" height="788" />
     </state>
     <state width="1557" height="237" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1600608718935" />
-    <state width="1398" height="237" key="GridCell.Tab.0.center/0.23.1440.788@0.23.1440.788" timestamp="1598277420195" />
-    <state width="1557" height="237" key="GridCell.Tab.0.left" timestamp="1600608718935">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1398" height="237" key="GridCell.Tab.0.center/0.23.1440.788@0.23.1440.788" timestamp="1600775896242" />
+    <state width="1398" height="237" key="GridCell.Tab.0.left" timestamp="1600775896241">
+      <screen x="0" y="23" width="1440" height="788" />
     </state>
     <state width="1557" height="237" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1600608718935" />
-    <state width="1398" height="237" key="GridCell.Tab.0.left/0.23.1440.788@0.23.1440.788" timestamp="1598277420194" />
-    <state width="1557" height="237" key="GridCell.Tab.0.right" timestamp="1600608718935">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1398" height="237" key="GridCell.Tab.0.left/0.23.1440.788@0.23.1440.788" timestamp="1600775896241" />
+    <state width="1398" height="237" key="GridCell.Tab.0.right" timestamp="1600775896242">
+      <screen x="0" y="23" width="1440" height="788" />
     </state>
     <state width="1557" height="237" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1600608718935" />
-    <state width="1398" height="237" key="GridCell.Tab.0.right/0.23.1440.788@0.23.1440.788" timestamp="1598277420195" />
+    <state width="1398" height="237" key="GridCell.Tab.0.right/0.23.1440.788@0.23.1440.788" timestamp="1600775896242" />
     <state width="1557" height="266" key="GridCell.Tab.1.bottom" timestamp="1600606899567">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -356,10 +357,10 @@
       <screen x="0" y="23" width="1440" height="788" />
     </state>
     <state x="397" y="249" key="com.intellij.ide.util.TipDialog/0.23.1440.788@0.23.1440.788" timestamp="1598270065868" />
-    <state x="561" y="251" width="683" height="486" key="find.popup" timestamp="1598208443096">
+    <state x="561" y="251" width="837" height="550" key="find.popup" timestamp="1600772325894">
       <screen x="0" y="23" width="1440" height="788" />
     </state>
-    <state x="561" y="251" width="683" height="486" key="find.popup/0.23.1440.788@0.23.1440.788" timestamp="1598208443096" />
+    <state x="561" y="251" width="837" height="550" key="find.popup/0.23.1440.788@0.23.1440.788" timestamp="1600772325894" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1597828866033">
       <screen x="0" y="23" width="1440" height="788" />
     </state>

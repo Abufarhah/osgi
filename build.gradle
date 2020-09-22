@@ -112,17 +112,8 @@ publishing {
     }
 }
 
-//jar {
-//    manifest {
-//        attributes('-exportcontents': 'spring.demo.*',
-//            '-sources': 'true',
-//            '-include': 'other.bnd',
-//            'Main-Class': 'spring.demo.DemoApplication')
-//    }
-//}
 
 import aQute.bnd.gradle.Bundle
-//import com.sun.tools.doclets.internal.toolkit.util.Util
 
 tasks.register('bundle',  Bundle) {
     from sourceSets.main.output

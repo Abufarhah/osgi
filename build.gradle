@@ -76,7 +76,7 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web'){
         exclude group: 'org.springframework.boot:spring-boot-starter-tomcat'
     }
-
+//    compile 'com.sun.activation:javax.activation:1.2.0'
 //    implementation 'org.springframework.boot:spring-boot-starter-tomcat:2.3.3.RELEASE'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-jetty'
@@ -85,7 +85,11 @@ dependencies {
     implementation ('org.springframework.boot:spring-boot-starter-web-services') {
         exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
     }
-
+    compile group: 'com.sun.istack', name: 'istack-commons-runtime', version: '3.0.11'
+    implementation group: 'com.sun.xml.bind', name: 'jaxb-impl', version: '2.3.0'
+    implementation group: 'com.sun.xml.bind', name: 'jaxb-core', version: '2.3.0'
+    implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.0'
+    compile group: 'jakarta.xml.bind', name: 'jakarta.xml.bind-api', version: '2.3.3'
 //    implementation 'org.springframework.ws:spring-ws-core'
     implementation 'wsdl4j:wsdl4j:1.6.3'
     jaxb("org.glassfish.jaxb:jaxb-xjc:2.2.11")
@@ -112,17 +116,8 @@ publishing {
     }
 }
 
-//jar {
-//    manifest {
-//        attributes('-exportcontents': 'spring.demo.*',
-//            '-sources': 'true',
-//            '-include': 'other.bnd',
-//            'Main-Class': 'spring.demo.DemoApplication')
-//    }
-//}
 
 import aQute.bnd.gradle.Bundle
-//import com.sun.tools.doclets.internal.toolkit.util.Util
 
 tasks.register('bundle',  Bundle) {
     from sourceSets.main.output
@@ -134,7 +129,7 @@ bundle {
             'Bundle-ManifestVersion': 2,
             'Bundle-Activator': 'spring.demo.DemoApplication',
             'Export-Package': '*',
-            'Import-Package': 'org.osgi.framework, org.springframework.boot, org.springframework.boot.autoconfigure, javax.naming, javax.management, javax.management.modelmbean, javax.net.ssl, org.ietf.jgss, org.xml.sax, javax.xml.parsers, org.osgi.service.packageadmin, org.springframework.boot.web.servlet.support, javax.xml.transform, org.w3c.dom, javax.xml.namespace, javax.xml.xpath, javax.xml.stream, javax.xml.transform.dom, com.sun.xml.messaging.saaj, javax.xml.soap, com.sun.xml.messaging.saaj.soap, javax.xml.transform.stream',
+            'Import-Package': 'org.osgi.framework, org.springframework.boot, org.springframework.boot.autoconfigure, javax.naming, javax.management, javax.management.modelmbean, javax.net.ssl, org.ietf.jgss,  javax.xml.parsers, org.osgi.service.packageadmin, org.springframework.boot.web.servlet.support, javax.xml.transform, org.w3c.dom, javax.xml.namespace, javax.xml.xpath, javax.xml.stream, javax.xml.transform.dom, com.sun.xml.messaging.saaj, javax.xml.soap, com.sun.xml.messaging.saaj.soap, javax.xml.transform.stream, org.xml.sax.ext, org.xml.sax.helpers, org.xml.sax, javax.xml.transform.sax, com.sun.xml.bind.v2, javax.activation, javax.xml.datatype',
             'Start-Class': 'spring.demo.DemoApplication',
             'Embed-Dependency': '*;artifactId=org.apache.felix.framework;inline=true'
     }
